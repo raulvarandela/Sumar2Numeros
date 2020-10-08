@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <!--primer layout-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25">
+
+        <TextView
+            android:id="@+id/operador1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight=".3"
+            android:gravity="left"
+            android:text="Primer operando:" />
+
+        <EditText
+            android:id="@+id/edOp1"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight=".7"
+            android:gravity="right" />
+
+    </LinearLayout>
+
+    <!--segundo layout-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25">
+
+        <TextView
+            android:id="@+id/operador2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight=".3"
+            android:gravity="left"
+            android:text="Segundo operando:" />
+
+        <EditText
+            android:id="@+id/edOp2"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight=".7"
+            android:gravity="right" />
+
+    </LinearLayout>
+
+
+    <!--tercer layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25">
+
+        <Button
+            android:id="@+id/boton"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:text="¡sumar!" />
+
+    </LinearLayout>
+
+    <!--cuarto layout-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight=".5"
+            android:gravity="left"
+            android:text="Resultado:" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="12dp"
+            android:layout_weight=".5"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
